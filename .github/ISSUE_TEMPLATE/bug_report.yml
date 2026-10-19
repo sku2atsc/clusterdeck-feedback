@@ -1,0 +1,89 @@
+name: "🐞 Fehler melden / Bug report"
+description: "Etwas funktioniert nicht wie erwartet. / Something doesn't work as expected."
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du hilfst, ClusterDeck besser zu machen! Du kannst auf Deutsch oder Englisch schreiben.
+        Thanks for helping to improve ClusterDeck! Feel free to write in German or English.
+
+        ⚠️ Bitte keine Passwörter, E-Mail-Adressen oder anderen persönlichen Daten eintragen – Issues sind öffentlich.
+        ⚠️ Please don't post passwords, e-mail addresses or other personal data – issues are public.
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Bereich / Area"
+      options:
+        - "Live-Spots / Live spots (Startseite / start page)"
+        - "Filter / Filters"
+        - "Suche & Archiv / Search & archive"
+        - "Activity Hunting Tool (POTA, SOTA …)"
+        - "HF-WX (Sonne & Ausbreitung / solar & propagation)"
+        - "Statistik / Statistics"
+        - "DXpeditionen / DXpeditions"
+        - "Spot absetzen / Posting spots"
+        - "Anmeldung & Registrierung / Login & registration"
+        - "Push-Benachrichtigungen / Push notifications"
+        - "App auf dem Handy (PWA) / Phone app (PWA)"
+        - "Telnet dm3ks.de:7300 / Logprogramm / logging software"
+        - "Anderes / Other"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: "Was ist passiert? / What happened?"
+      placeholder: "z.B. Nach dem Klick auf … erscheint … / e.g. After clicking … I see …"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Was hättest du erwartet? / What did you expect?"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Schritte zum Nachstellen / Steps to reproduce"
+      placeholder: |
+        1. Seite öffnen / open page …
+        2. Filter … wählen / select filter …
+        3. …
+  - type: input
+    id: version
+    attributes:
+      label: "ClusterDeck-Version"
+      description: "Steht unten in der Fußzeile, z.B. „ClusterDeck v1.3.4“. / Shown in the footer, e.g. “ClusterDeck v1.3.4”."
+      placeholder: "v1.3.4"
+  - type: input
+    id: when
+    attributes:
+      label: "Wann? (Datum, Uhrzeit UTC) / When? (date, time UTC)"
+      description: "Hilft, den Fall im Protokoll zu finden. / Helps to find it in the logs."
+      placeholder: "2026-10-19 07:45 UTC"
+  - type: input
+    id: device
+    attributes:
+      label: "Gerät & Browser / Device & browser"
+      placeholder: "z.B. Windows 11 + Firefox 131, iPhone 15 + Safari (als App) / e.g. Android + Chrome"
+  - type: input
+    id: logger
+    attributes:
+      label: "Logprogramm (nur bei Telnet) / Logging software (telnet only)"
+      placeholder: "z.B. Log4OM 2, N1MM+, HAM Radio Deluxe, WSJT-X/JTAlert"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots"
+      description: "Einfach per Drag & Drop einfügen. / Just drag & drop images here."
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Kurz geprüft / Quick check"
+      options:
+        - label: "Ich habe die vorhandenen Issues durchsucht. / I searched the existing issues."
+          required: true
+        - label: "Ich habe die Seite einmal neu geladen (Strg+F5 bzw. App neu gestartet). / I reloaded the page once (Ctrl+F5 or restarted the app)."

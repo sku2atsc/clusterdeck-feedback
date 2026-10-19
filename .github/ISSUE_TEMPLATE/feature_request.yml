@@ -1,0 +1,60 @@
+name: "💡 Wunsch / Feature request"
+description: "Idee für eine neue Funktion oder Verbesserung. / Idea for a new feature or improvement."
+title: "[Wunsch] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für deine Idee! Deutsch oder Englisch – beides ist willkommen.
+        Thanks for your idea! German or English – both are welcome.
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Bereich / Area"
+      options:
+        - "Live-Spots & Filter / Live spots & filters"
+        - "Activity Hunting Tool (POTA, SOTA …)"
+        - "HF-WX (Sonne & Ausbreitung / solar & propagation)"
+        - "Statistik / Statistics"
+        - "DXpeditionen / DXpeditions"
+        - "Push-Benachrichtigungen / Push notifications"
+        - "App auf dem Handy (PWA) / Phone app (PWA)"
+        - "Telnet / Cluster-Node (DM3KS-9)"
+        - "Neue Seite / New page"
+        - "Anderes / Other"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Was möchtest du erreichen? / What do you want to achieve?"
+      description: "Beschreibe die Situation, nicht nur die Lösung. / Describe the situation, not only the solution."
+      placeholder: "z.B. Als POTA-Hunter möchte ich … / e.g. As a POTA hunter I'd like to …"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Wie könnte es aussehen? / How could it work?"
+      placeholder: "Ein Knopf …, ein Filter …, eine Spalte … / A button …, a filter …, a column …"
+  - type: textarea
+    id: example
+    attributes:
+      label: "Vorbild oder Beispiel / Example elsewhere"
+      description: "Gibt es das schon woanders (z.B. pota.app, DXHeat, HamAlert)? Link oder Screenshot hilft. / Seen this elsewhere? A link or screenshot helps."
+  - type: dropdown
+    id: importance
+    attributes:
+      label: "Wie wichtig ist dir das? / How important is it to you?"
+      options:
+        - "Nett zu haben / Nice to have"
+        - "Würde ich oft nutzen / I'd use it often"
+        - "Fehlt mir wirklich / I really miss it"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Kurz geprüft / Quick check"
+      options:
+        - label: "Ich habe die vorhandenen Issues durchsucht. / I searched the existing issues."
+          required: true

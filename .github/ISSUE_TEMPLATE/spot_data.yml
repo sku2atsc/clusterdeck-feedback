@@ -1,0 +1,50 @@
+name: "📡 Spots & Daten / Spot & data problem"
+description: "Falsche oder fehlende Spots, Referenzen, Länder, Sonnendaten. / Wrong or missing spots, references, countries, solar data."
+title: "[Daten] "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Für Probleme mit den Inhalten, nicht mit der Bedienung – z.B. ein POTA-Spot ohne oder mit falscher Referenz, ein falsches Land, ein fehlender SOTA-Spot.
+        For problems with the content, not the interface – e.g. a POTA spot with a missing or wrong reference, a wrong country, a missing SOTA spot.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "Art des Problems / Kind of problem"
+      options:
+        - "POTA-/SOTA-Spot fehlt / POTA/SOTA spot missing"
+        - "Referenz fehlt oder falsch / Reference missing or wrong"
+        - "Spot doppelt / Duplicate spot"
+        - "Land/Kontinent falsch / Wrong country/continent"
+        - "Aktivierer fälschlich aktiv oder QRT / Activator wrongly shown active or QRT"
+        - "DXpedition fehlt oder falsch / DXpedition missing or wrong"
+        - "Sonnen-/Ausbreitungsdaten / Solar or propagation data"
+        - "Anderes / Other"
+    validations:
+      required: true
+  - type: input
+    id: call
+    attributes:
+      label: "Rufzeichen (DX/Aktivierer) / Callsign (DX/activator)"
+      placeholder: "z.B. K1ABC"
+    validations:
+      required: true
+  - type: input
+    id: spot
+    attributes:
+      label: "Frequenz, Zeit (UTC), Referenz / Frequency, time (UTC), reference"
+      placeholder: "14062.0 kHz · 2026-10-19 07:45 UTC · US-1234"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Was stimmt nicht? / What's wrong?"
+      description: "Was wurde angezeigt, was wäre richtig? / What was shown, what would be correct?"
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots"
