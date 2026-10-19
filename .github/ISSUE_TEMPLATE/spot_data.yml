@@ -1,47 +1,47 @@
-name: "📡 Spots & Daten / Spot & data problem"
-description: "Falsche oder fehlende Spots, Referenzen, Länder, Sonnendaten. / Wrong or missing spots, references, countries, solar data."
-title: "[Daten] "
+name: "📡 Spot & data problem / Spots & Daten"
+description: "Wrong or missing spots, references, countries, solar data. / Falsche oder fehlende Spots, Referenzen, Länder, Sonnendaten."
+title: "[Data] "
 labels: ["data"]
 body:
   - type: markdown
     attributes:
       value: |
-        Für Probleme mit den Inhalten, nicht mit der Bedienung – z.B. ein POTA-Spot ohne oder mit falscher Referenz, ein falsches Land, ein fehlender SOTA-Spot.
         For problems with the content, not the interface – e.g. a POTA spot with a missing or wrong reference, a wrong country, a missing SOTA spot.
+        Für Probleme mit den Inhalten, nicht mit der Bedienung – z.B. ein POTA-Spot ohne oder mit falscher Referenz, ein falsches Land, ein fehlender SOTA-Spot.
   - type: dropdown
     id: kind
     attributes:
-      label: "Art des Problems / Kind of problem"
+      label: "Kind of problem / Art des Problems"
       options:
-        - "POTA-/SOTA-Spot fehlt / POTA/SOTA spot missing"
-        - "Referenz fehlt oder falsch / Reference missing or wrong"
-        - "Spot doppelt / Duplicate spot"
-        - "Land/Kontinent falsch / Wrong country/continent"
-        - "Aktivierer fälschlich aktiv oder QRT / Activator wrongly shown active or QRT"
-        - "DXpedition fehlt oder falsch / DXpedition missing or wrong"
-        - "Sonnen-/Ausbreitungsdaten / Solar or propagation data"
-        - "Anderes / Other"
+        - "POTA/SOTA spot missing / POTA-/SOTA-Spot fehlt"
+        - "Reference missing or wrong / Referenz fehlt oder falsch"
+        - "Duplicate spot / Spot doppelt"
+        - "Wrong country/continent / Land/Kontinent falsch"
+        - "Activator wrongly shown active or QRT / Aktivierer fälschlich aktiv oder QRT"
+        - "DXpedition missing or wrong / DXpedition fehlt oder falsch"
+        - "Solar or propagation data / Sonnen-/Ausbreitungsdaten"
+        - "Other / Anderes"
     validations:
       required: true
   - type: input
     id: call
     attributes:
-      label: "Rufzeichen (DX/Aktivierer) / Callsign (DX/activator)"
-      placeholder: "z.B. K1ABC"
+      label: "Callsign (DX/activator) / Rufzeichen (DX/Aktivierer)"
+      placeholder: "e.g. K1ABC"
     validations:
       required: true
   - type: input
     id: spot
     attributes:
-      label: "Frequenz, Zeit (UTC), Referenz / Frequency, time (UTC), reference"
+      label: "Frequency, time (UTC), reference / Frequenz, Zeit (UTC), Referenz"
       placeholder: "14062.0 kHz · 2026-10-19 07:45 UTC · US-1234"
     validations:
       required: true
   - type: textarea
     id: details
     attributes:
-      label: "Was stimmt nicht? / What's wrong?"
-      description: "Was wurde angezeigt, was wäre richtig? / What was shown, what would be correct?"
+      label: "What's wrong? / Was stimmt nicht?"
+      description: "What was shown, what would be correct? / Was wurde angezeigt, was wäre richtig?"
     validations:
       required: true
   - type: textarea

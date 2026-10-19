@@ -1,89 +1,89 @@
-name: "🐞 Fehler melden / Bug report"
-description: "Etwas funktioniert nicht wie erwartet. / Something doesn't work as expected."
+name: "🐞 Bug report / Fehler melden"
+description: "Something doesn't work as expected. / Etwas funktioniert nicht wie erwartet."
 title: "[Bug] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Danke, dass du hilfst, ClusterDeck besser zu machen! Du kannst auf Deutsch oder Englisch schreiben.
-        Thanks for helping to improve ClusterDeck! Feel free to write in German or English.
+        Thanks for helping to improve ClusterDeck! Feel free to write in English or German.
+        Danke, dass du hilfst, ClusterDeck besser zu machen! Du kannst auf Englisch oder Deutsch schreiben.
 
-        ⚠️ Bitte keine Passwörter, E-Mail-Adressen oder anderen persönlichen Daten eintragen – Issues sind öffentlich.
         ⚠️ Please don't post passwords, e-mail addresses or other personal data – issues are public.
+        ⚠️ Bitte keine Passwörter, E-Mail-Adressen oder anderen persönlichen Daten eintragen – Issues sind öffentlich.
   - type: dropdown
     id: area
     attributes:
-      label: "Bereich / Area"
+      label: "Area / Bereich"
       options:
-        - "Live-Spots / Live spots (Startseite / start page)"
-        - "Filter / Filters"
-        - "Suche & Archiv / Search & archive"
+        - "Live spots (start page) / Live-Spots (Startseite)"
+        - "Filters / Filter"
+        - "Search & archive / Suche & Archiv"
         - "Activity Hunting Tool (POTA, SOTA …)"
-        - "HF-WX (Sonne & Ausbreitung / solar & propagation)"
-        - "Statistik / Statistics"
-        - "DXpeditionen / DXpeditions"
-        - "Spot absetzen / Posting spots"
-        - "Anmeldung & Registrierung / Login & registration"
-        - "Push-Benachrichtigungen / Push notifications"
-        - "App auf dem Handy (PWA) / Phone app (PWA)"
-        - "Telnet dm3ks.de:7300 / Logprogramm / logging software"
-        - "Anderes / Other"
+        - "HF-WX (solar & propagation / Sonne & Ausbreitung)"
+        - "Statistics / Statistik"
+        - "DXpeditions / DXpeditionen"
+        - "Posting spots / Spot absetzen"
+        - "Login & registration / Anmeldung & Registrierung"
+        - "Push notifications / Push-Benachrichtigungen"
+        - "Phone app (PWA) / App auf dem Handy (PWA)"
+        - "Telnet dm3ks.de:7300 / logging software / Logprogramm"
+        - "Other / Anderes"
     validations:
       required: true
   - type: textarea
     id: what
     attributes:
-      label: "Was ist passiert? / What happened?"
-      placeholder: "z.B. Nach dem Klick auf … erscheint … / e.g. After clicking … I see …"
+      label: "What happened? / Was ist passiert?"
+      placeholder: "e.g. After clicking … I see … / z.B. Nach dem Klick auf … erscheint …"
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: "Was hättest du erwartet? / What did you expect?"
+      label: "What did you expect? / Was hättest du erwartet?"
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: "Schritte zum Nachstellen / Steps to reproduce"
+      label: "Steps to reproduce / Schritte zum Nachstellen"
       placeholder: |
-        1. Seite öffnen / open page …
-        2. Filter … wählen / select filter …
+        1. open page / Seite öffnen …
+        2. select filter / Filter … wählen …
         3. …
   - type: input
     id: version
     attributes:
       label: "ClusterDeck-Version"
-      description: "Steht unten in der Fußzeile, z.B. „ClusterDeck v1.3.4“. / Shown in the footer, e.g. “ClusterDeck v1.3.4”."
+      description: "Shown in the footer, e.g. “ClusterDeck v1.3.4”. / Steht unten in der Fußzeile, z.B. „ClusterDeck v1.3.4“."
       placeholder: "v1.3.4"
   - type: input
     id: when
     attributes:
-      label: "Wann? (Datum, Uhrzeit UTC) / When? (date, time UTC)"
-      description: "Hilft, den Fall im Protokoll zu finden. / Helps to find it in the logs."
+      label: "When? (date, time UTC) / Wann? (Datum, Uhrzeit UTC)"
+      description: "Helps to find it in the logs. / Hilft, den Fall im Protokoll zu finden."
       placeholder: "2026-10-19 07:45 UTC"
   - type: input
     id: device
     attributes:
-      label: "Gerät & Browser / Device & browser"
-      placeholder: "z.B. Windows 11 + Firefox 131, iPhone 15 + Safari (als App) / e.g. Android + Chrome"
+      label: "Device & browser / Gerät & Browser"
+      placeholder: "e.g. Android + Chrome / z.B. Windows 11 + Firefox 131, iPhone 15 + Safari (als App)"
   - type: input
     id: logger
     attributes:
-      label: "Logprogramm (nur bei Telnet) / Logging software (telnet only)"
-      placeholder: "z.B. Log4OM 2, N1MM+, HAM Radio Deluxe, WSJT-X/JTAlert"
+      label: "Logging software (telnet only) / Logprogramm (nur bei Telnet)"
+      placeholder: "e.g. Log4OM 2, N1MM+, HAM Radio Deluxe, WSJT-X/JTAlert"
   - type: textarea
     id: screenshots
     attributes:
       label: "Screenshots"
-      description: "Einfach per Drag & Drop einfügen. / Just drag & drop images here."
+      description: "Just drag & drop images here. / Einfach per Drag & Drop einfügen."
   - type: checkboxes
     id: checks
     attributes:
-      label: "Kurz geprüft / Quick check"
+      label: "Quick check / Kurz geprüft"
       options:
-        - label: "Ich habe die vorhandenen Issues durchsucht. / I searched the existing issues."
+        - label: "I searched the existing issues. / Ich habe die vorhandenen Issues durchsucht."
           required: true
-        - label: "Ich habe die Seite einmal neu geladen (Strg+F5 bzw. App neu gestartet). / I reloaded the page once (Ctrl+F5 or restarted the app)."
+        - label: "I reloaded the page once (Ctrl+F5 or restarted the app). / Ich habe die Seite einmal neu geladen (Strg+F5 bzw. App neu gestartet)."

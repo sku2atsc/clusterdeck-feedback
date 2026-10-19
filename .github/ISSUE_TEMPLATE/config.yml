@@ -1,11 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: "📖 Anleitung / User guide"
+  - name: "📖 User guide / Anleitung"
     url: https://dxc.dm3ks.de/hilfe
-    about: "Viele Fragen beantwortet schon die Anleitung. / Many questions are answered in the guide."
-  - name: "🔒 Sicherheitslücke melden / Report a security issue"
+    about: "Many questions are answered in the guide. / Viele Fragen beantwortet schon die Anleitung."
+  - name: "🔒 Report a security issue / Sicherheitslücke melden"
     url: https://dxc.dm3ks.de/impressum
-    about: "Bitte nicht öffentlich, sondern per E-Mail an info@dm3ks.de. / Please e-mail info@dm3ks.de instead of opening a public issue."
-  - name: "🔑 Zugang, Passwort, Registrierung / Account & access"
+    about: "Please e-mail info@dm3ks.de instead of opening a public issue. / Bitte nicht öffentlich, sondern per E-Mail an info@dm3ks.de."
+  - name: "🔑 Account & access / Zugang, Passwort, Registrierung"
     url: https://dxc.dm3ks.de/impressum
-    about: "Bitte per E-Mail an info@dm3ks.de – Issues sind öffentlich. / Please e-mail info@dm3ks.de – issues are public."
+    about: "Please e-mail info@dm3ks.de – issues are public. / Bitte per E-Mail an info@dm3ks.de – Issues sind öffentlich."
